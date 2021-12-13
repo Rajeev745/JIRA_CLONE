@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(241, 239, 239);
+}
+header{
+    width: 80%;
+    height: 10%;
+    background-color: black;
+    margin: 10px 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn{
+    height: 60px;
+    width: 80px;
+    margin: 5px 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+main{
+    height: 50%;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10% 10%;
+    background-color: gray;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* background-color: white; */
+
+}
