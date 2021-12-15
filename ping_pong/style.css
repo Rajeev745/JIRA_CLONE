@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer{
+    height: 60%;
+    width: 60%;
+    background-color: black;
+    
+    
+}
+.ball{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    top: 40%;
+    left:50%;
+}
+.box{
+    background-color: lightcoral;
+    height: 20px;
+    width: 90px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20.2%;
+    left: 20.5%;
+}

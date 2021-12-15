@@ -6,7 +6,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: rgb(241, 239, 239);
+    background-color: white;
 }
 header{
     width: 80%;
@@ -30,7 +30,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     margin: 10% 10%;
-    background-color: gray;
+    background-color: white;
 }
 .circle{
     width: 60px;
