@@ -14,7 +14,9 @@ body,html{
 .outer{
     height: 60%;
     width: 60%;
-    background-color: black;
+    /* background-color: black;
+     */
+     background-image: radial-gradient(circle,rgb(59, 57, 57),rgb(0, 0, 0));
     
     
 }
@@ -24,15 +26,36 @@ body,html{
     background-color: white;
     border-radius: 50%;
     position: fixed;
-    top: 40%;
-    left:50%;
+    top: 30%;
+    left:30%;
+    box-shadow: 4px 4px 10px 3px rgb(109, 108, 108);
 }
 .box{
-    background-color: lightcoral;
+    background-color: rgb(250, 11, 11);
     height: 20px;
     width: 90px;
     border-radius: 50%;
     position: fixed;
     bottom: 20.2%;
     left: 20.5%;
+}
+.buttons:hover{
+    transition: all 200ms ease-in-out;
+    transform: scale(1.3,1.2);
+}
+.lose{
+    height: 20%;
+    width: 40%;
+    background: blue;
+    text-align: center;
+    position: fixed;
+    display: none;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-size: 4rem;
+    padding-top: 30px;
+    padding-left: 130px;
+    font-weight: 900;
+
 }

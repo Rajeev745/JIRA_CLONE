@@ -4,6 +4,9 @@ let box=document.querySelector(".box");
 let outer=main.getBoundingClientRect();
 let x=true;
 let y=true;
+let buttons=document.querySelector(".buttons");
+let lost=document.querySelector(".lose")
+
 
 function move(box,val){
     let boxmove=box.getBoundingClientRect();
@@ -42,19 +45,24 @@ if(ballleft<=outer.left||ballright>=outer.right){
     x=!x
 }
 
-if(balltop<=boxtop && ballbottom+20>=boxbottom && ballleft+20>=boxleft && ballright-20<=boxright ||balltop<=outer.top|| ballbottom>=outer.bottom){
+if(balltop<=boxtop && ballbottom+20>=boxbottom && ballleft+40>=boxleft && ballright-40<=boxright||balltop<=outer.top){
     y=!y
+}
+if(ballbottom>=outer.bottom){
+    
+   lost.style.display="flex"
+   return;
 }
 
 if(y==true){
-    ball.style.top=balltop+1+"px"
+    ball.style.top=balltop+2+"px"
 }else{
-    ball.style.top=balltop-1+"px"
+    ball.style.top=balltop-2+"px"
 }
 if(x==true){
-    ball.style.left=ballleft+1+"px"
+    ball.style.left=ballleft+2+"px"
 }else{
-    ball.style.left=ballleft-1+"px"
+    ball.style.left=ballleft-2+"px"
 }
 
 
@@ -62,3 +70,10 @@ requestAnimationFrame(movement)
 
 }
 requestAnimationFrame(movement);
+
+function refresh(){
+    document.location.reload();
+}
+
+
+buttons.addEventListener("click",refresh)
